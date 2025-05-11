@@ -1,4 +1,4 @@
-FROM mysql:8.2.0
+FROM mysql:latest
 
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_DATABASE=app_db
@@ -6,3 +6,5 @@ ENV MYSQL_USER=app_user
 ENV MYSQL_PASSWORD=1234
 
 EXPOSE 3306
+
+VOLUME /var/lib/mysql
